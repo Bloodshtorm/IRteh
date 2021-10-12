@@ -12,6 +12,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
 
 namespace IRteh
 {
@@ -27,9 +28,11 @@ namespace IRteh
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
+            services.AddDbContext<ApplicationContext>(options => options.UseNpgsql("Server=localhost;Database=irteh;User ID=postgres;Password=root;CommandTimeout=2000000;"));
+            services.AddControllersWithViews();
+
             services.AddControllers();
-            //services.AddMvc();
-            //services.AddSingleton<IConfigurationBuilder, ConfigurationBuilder>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo 

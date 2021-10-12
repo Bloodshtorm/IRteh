@@ -26,14 +26,5 @@
             IEnumerable в который собственно и запихиваем нашу статью с датой и гуидом плюсом.
             </returns>
         </member>
-        <member name="M:IRteh.Controllers.SerachArticlesController.SerachArticleFor(System.String,System.String,System.Collections.Generic.List{IRteh.Articles})">
-            <summary>
-            Генерация тестового списка статей
-            </summary>
-            <remarks>
-            Немного поиграюсь с метадом
-            </remarks>
-            <returns></returns>
-        </member>
     </members>
 </doc>

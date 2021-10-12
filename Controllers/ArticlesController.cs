@@ -66,6 +66,5 @@ namespace IRteh.Controllers
 
             return art.AsEnumerable<Articles>().ToArray();
         }
-
     }
 }

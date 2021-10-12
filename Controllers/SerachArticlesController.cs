@@ -17,7 +17,7 @@ namespace IRteh.Controllers
         {
             _logger = logger;
         }
-
+        /*
         /// <summary>
         /// Генерация тестового списка статей
         /// </summary>
@@ -26,9 +26,9 @@ namespace IRteh.Controllers
         /// </remarks>
         /// <returns></returns>
         [HttpPost]
-        public IEnumerable<Articles> SerachArticleFor( )
-        { 
+        public IEnumerable<Articles> SerachArticleFor()
+        {
             return art.AsEnumerable<Articles>().ToArray();
-        }
+        }*/
     }
 }
